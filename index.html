@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <button class="accordion"> Slider one </button>
+        <div class="desc ">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, libero eveniet quis hic voluptatibus dolor
+                est suscipit beatae ipsam numquam maiores repudiandae, nemo eaque sit.
+            </p>
+        </div>
+        <button class="accordion"> Slider two </button>
+        <div class="desc ">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, libero eveniet quis hic voluptatibus dolor
+                est suscipit beatae ipsam numquam maiores repudiandae, nemo eaque sit.
+            </p>
+        </div>
+        <button class="accordion"> Slider three </button>
+        <div class="desc ">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, libero eveniet quis hic voluptatibus dolor
+                est suscipit beatae ipsam numquam maiores repudiandae, nemo eaque sit.
+            </p>
+        </div>
+        <button class="accordion"> Slider four </button>
+        <div class="desc ">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, libero eveniet quis hic voluptatibus dolor
+                est suscipit beatae ipsam numquam maiores repudiandae, nemo eaque sit.
+            </p>
+        </div>
+        <button class="accordion"> Slider five </button>
+        <div class="desc ">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, libero eveniet quis hic voluptatibus dolor
+                est suscipit beatae ipsam numquam maiores repudiandae, nemo eaque sit.
+            </p>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <div class="gallery">
+        <div class="thumbnail">
+            <img src="./img/p11.jpg" alt="">
+            <img src="./img/p12.jpg" alt="">
+            <img src="./img/p1.jpg" alt="">
+            <img src="./img/mac.jpg" alt="">
+
+            <div class="preview">
+                <img src="./img/p11.jpg" alt="">
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+<div class="container col-3 mt-4">
+    <form name="calc" >
+    <table class="table">
+        <tr>
+            <input type="text" name="result" class="form-control" disabled>
+        </tr>
+        <tr>
+            <td> <input type="button" value="1" onclick="calc.result.value+='1'" > </td>
+            <td> <input type="button" value="2" onclick="calc.result.value+='2'" > </td>
+            <td> <input type="button" value="3" onclick="calc.result.value+='3'" > </td>
+            <td> <input type="button" value="+" onclick="calc.result.value+='+'" > </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="4" onclick="calc.result.value+='4'" > </td>
+            <td> <input type="button" value="5" onclick="calc.result.value+='5'" > </td>
+            <td> <input type="button" value="6" onclick="calc.result.value+='6'" > </td>
+            <td> <input type="button" value="-" onclick="calc.result.value+='-'" > </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="7" onclick="calc.result.value+='7'" > </td>
+            <td> <input type="button" value="8" onclick="calc.result.value+='8'" > </td>
+            <td> <input type="button" value="9" onclick="calc.result.value+='9'" > </td>
+            <td> <input type="button" value="*" onclick="calc.result.value+='*'" > </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="C" onclick="calc.result.value =''" > </td>
+            <td> <input type="button" value="=" onclick="calc.result.value = eval(calc.result.value) " > </td>
+            <td> <input type="button" value="/" onclick="calc.result.value+='/'" > </td>
+            <td> <input type="button" value="0" onclick="calc.result.value+='0'" > </td>
+        </tr>
+    
+    </table>
+</form>
+</div>
+
+
+
+
+
+
+
+
+<div class="container col-4 mt-5">
+    <div class="row">
+        <div class="fan">
+            <i class="fa-brands fa-facebook-f"></i>
+            <div class="counter" data-target="2000">  </div>
+            <span> Facebook Fans </span>
+        </div>
+        <div class="fan">
+            <i class="fa-brands fa-instagram"></i>
+            <div class="counter" data-target="1500">  </div>
+            <span> Instagram Fans </span>
+        </div>
+        <div class="fan">
+            <i class="fa-brands fa-youtube"></i>
+            <div class="counter" data-target="3000">  </div>
+            <span> Youtube Fans </span>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+<div id="backdrop"></div>
+
+  <div class="modal card" id="add-modal">
+    <div class="modal__content">
+      <label for="title">Movie Title</label>
+      <input type="text" name="title" id="title" />
+      <label for="image-url">Image URL</label>
+      <input type="text" name="image-url" id="image-url" />
+      <label for="rating">Your Rating</label>
+      <input type="number" step="1" max="5" min="1" name="rating" id="rating" />
+    </div>
+    <div class="modal__actions">
+      <button id="cancelBtn" class="btn btn--passive">Cancel</button>
+      <button id="addBtn" class="btn btn--success">Add</button>
+    </div>
+  </div>
+
+
+  <header>
+    <h1>Favorite Movies</h1>
+    <button id="openBtn">ADD MOVIE</button>
+  </header>
+
+  <main>
+    <section id="entry-text" class="card">
+      <p>Your personal movie database!</p>
+    </section>
+    <ul id="movie-list"></ul>
+  </main>
+
+
+
+
+    <script src="./js/main.js"> </script>
+</body>
+
+</html>
+
+
+
+
